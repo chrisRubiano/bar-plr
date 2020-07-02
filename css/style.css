@@ -140,6 +140,11 @@
 
 
 
+body {
+  background-color: #FDEFD8;
+}
+
+
 .menu {
   display: flex;
   flex-wrap: wrap;
