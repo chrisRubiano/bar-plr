@@ -1,4 +1,4 @@
-@-webkit-keyframes pulse {
+@-webkit-keyframes iguana {
   0% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
@@ -20,16 +20,123 @@
           
           }
 
-/* @keyframes pulse {
+@keyframes iguana {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          }
   50% {
     -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px); }
+            transform: translate(0, 10px); 
+            -webkit-transform: rotate(30deg, 30deg); 
+            transform: rotate(30deg, 30deg); 
+          }
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } } */
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          } }
+
+
+@-webkit-keyframes flordos {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          }
+  50% {
+    -webkit-transform: translate(20px, 10px);
+            transform: translate(20px, 10px); 
+            -webkit-transform: rotate(30deg, 30deg); 
+            transform: rotate(30deg, 30deg); 
+          }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          } }
+
+@keyframes flordos {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          }
+  50% {
+    -webkit-transform: translate(20px, 10px);
+            transform: translate(20px, 10px); 
+            -webkit-transform: rotate(30deg, 30deg); 
+            transform: rotate(30deg, 30deg); 
+          }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          } }
+
+
+@-webkit-keyframes floruno {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          }
+  50% {
+    -webkit-transform: translate(10px, 30px);
+            transform: translate(10px, 30px); 
+            -webkit-transform: rotate(30deg, 30deg); 
+            transform: rotate(30deg, 30deg); 
+          }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          } }
+
+@keyframes floruno {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          }
+  50% {
+    -webkit-transform: translate(10px, 30px);
+            transform: translate(10px, 30px); 
+            -webkit-transform: rotate(30deg, 30deg); 
+            transform: rotate(30deg, 30deg); 
+          }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0); 
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          } }
+
+
+
+@keyframes rotate {
+  0% {
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          }
+  50% {
+            -webkit-transform: rotate(30deg, 30deg); 
+            transform: rotate(30deg, 30deg); 
+          }
+  100% {
+            -webkit-transform: rotate(0deg, 0deg); 
+            transform: rotate(0deg, 0deg); 
+          } }
 
 
 
@@ -44,10 +151,44 @@
   border: 1px solid black;
   color: black;
   text-decoration: none;
-  margin: 10px;
+  margin: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 img.iguana {
-  animation: pulse 3s infinite;
+  position: fixed;
+  top: 10%;
+  left: 4%;
+  animation: iguana 3s ease infinite;
+  z-index: -1;
 }
 
+img.floruno {
+  position: fixed;
+  bottom: 10%;
+  left: -4%;
+  animation: iguana 5s ease infinite;
+}
+
+img.flordos {
+  position: fixed;
+  bottom: 40%;
+  right: 0;
+  animation: flordos 6s ease-in-out infinite;
+}
+
+
+section {
+  min-height: 100%;
+  padding: 10%;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border: 4px solid white;
+}
+
+html {
+  scroll-behavior: smooth;
+}
