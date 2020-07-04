@@ -197,3 +197,35 @@ section img {
 html {
   scroll-behavior: smooth;
 }
+
+#photoCarousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel {
+  height: 80vh;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item {
+  width: 80%;
+  background-color: #fff9ef;
+  padding: 20px;
+  padding-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.4);
+}
+
+.carousel-item  img{
+  width: 80%;
+  height: auto;
+}
+
+.slick-arrow::before {
+  opacity: 1;
+}
+

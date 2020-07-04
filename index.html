@@ -12,12 +12,14 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/style.css">
 
-  <meta name="theme-color" content="#fafafa">
+  <meta name="theme-color" content="#FDEFD8">
 </head>
 
 <body>
@@ -72,6 +74,29 @@
     <img src="img/bebidas.png" alt="">
   </section>
 
+  <section id="photoCarousel">
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="img/bar1.jpeg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bar2.jpeg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bar3.jpeg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bar4.jpeg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bar5.jpeg" alt="">
+      </div>
+      <div class="carousel-item">
+        <img src="img/bar6.jpeg" alt="">
+      </div>
+    </div>
+  </section>
+
 
   <!-- JavaScript -->
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
@@ -82,11 +107,21 @@
   <script src="js/main.js"></script>
 
   <script src="js/aos.js"></script>
+  <script src="js/slick.js"></script>
   <script>
     AOS.init({
       duration: '700',
       easing: 'ease-out-sine'
     });
+  </script>
+  <script>
+    
+$(document).ready(function(){
+  $('.carousel').slick({
+    autoplay: true,
+    autoplaySpeed: 5000,
+  });
+});
   </script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
